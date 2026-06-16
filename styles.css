@@ -1557,3 +1557,20 @@ body.light-mode .skill-card {
   text-transform: uppercase;
   letter-spacing: 0.04em;
 }
+
+.skill-card {
+  grid-template-columns: auto minmax(0, 1fr) !important;
+}
+
+@media (max-width: 620px) {
+  .skill-card {
+    grid-template-columns: auto minmax(0, 1fr) !important;
+    grid-template-areas: none !important;
+  }
+
+  .skill-card img,
+  .skill-card .tech-monogram,
+  .skill-meta {
+    grid-area: auto !important;
+  }
+}
