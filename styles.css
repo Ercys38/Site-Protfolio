@@ -1574,3 +1574,46 @@ body.light-mode .skill-card {
     grid-area: auto !important;
   }
 }
+
+.profile-layout {
+  display: grid;
+  grid-template-columns: minmax(0, 1.2fr) minmax(300px, 0.8fr);
+  gap: 18px;
+  align-items: stretch;
+}
+
+.profile-layout .panel {
+  height: 100%;
+}
+
+.general-info-panel {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.english-description {
+  margin-top: 18px;
+  padding: 16px 18px;
+  border-left: 3px solid var(--accent-2);
+  border-radius: var(--radius);
+  background: color-mix(in srgb, var(--surface-strong) 62%, transparent);
+  color: var(--muted);
+  font-size: 0.96rem;
+}
+
+.english-description strong {
+  display: block;
+  margin-bottom: 6px;
+  color: var(--accent-2);
+  font-size: 0.82rem;
+  font-weight: 900;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+}
+
+@media (max-width: 760px) {
+  .profile-layout {
+    grid-template-columns: 1fr;
+  }
+}
