@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="description" content="Projets techniques d'Abdulkaan KUM." />
     <title>Abdulkaan KUM | Projets</title>
-    <link rel="stylesheet" href="styles.css?v=25" />
+    <link rel="stylesheet" href="styles.css?v=42" />
   </head>
   <body data-page="projets">
     <header class="site-header" data-header>
@@ -140,6 +140,19 @@
               <p>Application web de gestion de films en Django : catalogue, recherche, categories, comptes et administration.</p>
               <div class="tags"><span>Django</span><span>MySQL</span><span>Linux</span></div>
               <button class="text-link" type="button" data-modal-open="modal-django">Voir le projet</button>
+            </div>
+          </article>
+
+          <article class="project-card reveal">
+            <div class="project-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24"><path d="M12 2v20"></path><path d="M17 5H9.5a3.5 3.5 0 0 0 0 7H14a3.5 3.5 0 0 1 0 7H6"></path></svg>
+            </div>
+            <div class="project-content">
+              <p class="project-kicker">SAE 2.04</p>
+              <h2>SAE Intégrative 2.04</h2>
+              <p>Projet complet mêlant réseau, collecte de données, application web et base de données pour superviser des capteurs de température.</p>
+              <div class="tags"><span>Django</span><span>HTML</span><span>CSS</span><span>JavaScript</span><span>MySQL</span></div>
+              <button class="text-link" type="button" data-modal-open="modal-sae204">Voir le projet</button>
             </div>
           </article>
         </div>
@@ -514,6 +527,151 @@
   </p>
 </div>
         <div class="modal-links"><a class="modal-link" href="https://github.com/Ercys38" target="_blank" rel="noopener">GitHub</a></div>
+      </div>
+    </div>
+
+    <div class="modal" id="modal-sae204" role="dialog" aria-modal="true" aria-labelledby="modal-sae204-title">
+      <div class="modal-panel">
+        <button class="modal-close" type="button" data-modal-close aria-label="Fermer">x</button>
+
+        <div class="modal-head">
+          <div class="modal-icon" aria-hidden="true">
+            <svg viewBox="0 0 24 24"><path d="M12 2v20"></path><path d="M17 5H9.5a3.5 3.5 0 0 0 0 7H14a3.5 3.5 0 0 1 0 7H6"></path></svg>
+          </div>
+          <div>
+            <h2 class="modal-title" id="modal-sae204-title">SAE Intégrative 2.04</h2>
+            <div class="modal-meta">SAE 2.04 | Projet intégratif | Web & BDD | S2</div>
+          </div>
+        </div>
+
+        <div class="modal-section">
+          <h3>Contexte global du projet</h3>
+          <p>
+            La SAE Intégrative 2.04 regroupait plusieurs parties : réseau, téléphonie,
+            collecte de données, web et base de données. Le but était de créer une infrastructure
+            complète capable de récupérer des données de capteurs, de les stocker et de les afficher
+            dans une application web.
+          </p>
+          <p>
+            Les données provenaient de capteurs de température et permettaient de surveiller
+            plusieurs pièces comme la chambre ou le séjour. L’application permettait aussi
+            de consulter les mesures, comparer les espaces surveillés et gérer les capteurs.
+          </p>
+        </div>
+
+        <div class="modal-section">
+          <h3>Mon travail personnel</h3>
+          <p>
+            Personnellement, je me suis occupé de la partie web et de la base de données.
+            J’ai travaillé sur l’interface Django, l’affichage des mesures, les graphiques,
+            les filtres, l’export CSV et la gestion des capteurs.
+          </p>
+          <p>
+            Pour la base de données, j’ai réalisé la partie BDD avec MySQL afin d’organiser
+            les capteurs et les mesures de température de manière claire et exploitable par le site.
+          </p>
+        </div>
+
+        <div class="modal-section">
+          <h3>Fonctionnalités réalisées</h3>
+          <div class="modal-bullets">
+            <ul>
+              <li>Affichage des dernières mesures sous forme de tableau.</li>
+              <li>Affichage graphique des températures par pièce.</li>
+              <li>Filtres par capteur et par période.</li>
+              <li>Comparaison des espaces surveillés.</li>
+              <li>Export des données au format CSV.</li>
+              <li>Gestion des capteurs avec modification et suppression.</li>
+              <li>Mise à jour automatique de l’interface.</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="modal-section">
+          <h3>Captures du projet</h3>
+          <div class="modal-gallery">
+            <figure class="modal-figure">
+              <a href="assets/projets/accueil.png" target="_blank" rel="noopener">
+                <img src="assets/projets/accueil.png" alt="Accueil de l'application NexTemp21" loading="lazy" />
+              </a>
+              <figcaption>Accueil de l’application avec les espaces surveillés et les statistiques principales.</figcaption>
+            </figure>
+
+            <figure class="modal-figure">
+              <a href="assets/projets/analyse-sejour.png" target="_blank" rel="noopener">
+                <img src="assets/projets/analyse-sejour.png" alt="Analyse des températures du séjour" loading="lazy" />
+              </a>
+              <figcaption>Page d’analyse du séjour avec graphique des températures et état du capteur.</figcaption>
+            </figure>
+
+            <figure class="modal-figure">
+              <a href="assets/projets/analyse-chambre.png" target="_blank" rel="noopener">
+                <img src="assets/projets/analyse-chambre.png" alt="Analyse des températures de la chambre" loading="lazy" />
+              </a>
+              <figcaption>Page d’analyse de la chambre avec graphique et informations du capteur.</figcaption>
+            </figure>
+
+            <figure class="modal-figure">
+              <a href="assets/projets/mesures.png" target="_blank" rel="noopener">
+                <img src="assets/projets/mesures.png" alt="Tableau des dernières mesures" loading="lazy" />
+              </a>
+              <figcaption>Tableau des dernières mesures récupérées depuis la base de données.</figcaption>
+            </figure>
+
+            <figure class="modal-figure">
+              <a href="assets/projets/comparaison.png" target="_blank" rel="noopener">
+                <img src="assets/projets/comparaison.png" alt="Comparaison des espaces surveillés" loading="lazy" />
+              </a>
+              <figcaption>Comparaison des températures entre les différents espaces surveillés.</figcaption>
+            </figure>
+
+            <figure class="modal-figure">
+              <a href="assets/projets/parametres.png" target="_blank" rel="noopener">
+                <img src="assets/projets/parametres.png" alt="Paramètres de l'application NexTemp21" loading="lazy" />
+              </a>
+              <figcaption>Page paramètres : stockage MySQL, export CSV et mise à jour automatique.</figcaption>
+            </figure>
+          </div>
+        </div>
+
+        <div class="modal-section">
+          <h3>Technologies</h3>
+          <div class="modal-tags">
+            <span>Django</span><span>HTML</span><span>CSS</span><span>JavaScript</span><span>MySQL</span>
+          </div>
+        </div>
+
+        <div class="modal-section">
+          <h3>Compétences acquises</h3>
+          <div class="modal-bullets">
+            <ul>
+              <li><strong>AC13.02</strong> - Lire, modifier et corriger un programme.</li>
+              <li><strong>AC13.04</strong> - Connaître l’architecture et les technologies d’un site web.</li>
+              <li><strong>AC13.05</strong> - Choisir les mécanismes de gestion de données adaptés.</li>
+              <li><strong>AC13.06</strong> - S’intégrer dans un environnement de développement.</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="modal-section">
+          <h3>English summary</h3>
+          <p lang="en">
+            This project was about creating a complete system to monitor temperature sensors.
+            The global project included networking, data collection, a web application and a database.
+            My personal work focused on the web interface and the MySQL database. I used Django,
+            HTML, CSS, JavaScript and MySQL to display, filter and manage sensor data.
+          </p>
+        </div>
+
+        <div class="modal-section">
+          <h3>Bilan réflexif personnel</h3>
+          <p>
+            Ce projet m’a permis de mieux comprendre comment plusieurs parties techniques peuvent
+            fonctionner ensemble : réseau, collecte de données, base de données et interface web.
+            J’ai surtout progressé sur le lien entre Django et MySQL, ainsi que sur l’affichage
+            et la gestion des données dans une application web.
+          </p>
+        </div>
       </div>
     </div>
 
