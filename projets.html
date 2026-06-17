@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="description" content="Projets techniques d'Abdulkaan KUM." />
     <title>Abdulkaan KUM | Projets</title>
-    <link rel="stylesheet" href="styles.css?v=42" />
+    <link rel="stylesheet" href="styles.css?v=43" />
   </head>
   <body data-page="projets">
     <header class="site-header" data-header>
@@ -37,13 +37,13 @@
       </section>
 
       <section class="page-section">
-        <div class="section-header">
-          <span>01</span>
-          <h2>Projets réalisés en cours</h2>
-          <div></div>
-        </div>
+        <details class="projects-dropdown" open>
+          <summary>
+            <span>BUT1</span>
+            <strong>Projets réalisés en BUT1</strong>
+          </summary>
 
-        <div class="project-grid">
+          <div class="project-grid">
           <article class="project-card reveal">
             <div class="project-icon" aria-hidden="true">
               <svg viewBox="0 0 24 24"><path d="M21 15a4 4 0 0 1-4 4H7a4 4 0 0 1-4-4V7a4 4 0 0 1 4-4h10a4 4 0 0 1 4 4z"></path><path d="M3 9h18"></path><path d="M8 5h8"></path></svg>
@@ -147,17 +147,60 @@
               <button class="text-link" type="button" data-modal-open="modal-sae204">Voir le projet</button>
             </div>
           </article>
-        </div>
-      </section>
+          </div>
+        </details>
 
-      <section class="page-section">
-        <div class="section-header">
-          <span>02</span>
-          <h2>Projets personnels</h2>
-          <div></div>
-        </div>
+        <details class="projects-dropdown">
+          <summary>
+            <span>BUT2</span>
+            <strong>Projets réalisés en BUT2</strong>
+          </summary>
 
-        <div class="project-grid">
+          <div class="project-grid">
+          <article class="project-card is-coming reveal">
+            <div class="project-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24"><rect x="3" y="3" width="18" height="18" rx="2"></rect><path d="M8 8h8"></path><path d="M8 12h8"></path><path d="M8 16h5"></path></svg>
+              <span class="status-pill">À venir</span>
+            </div>
+            <div class="project-content">
+              <p class="project-kicker">BUT2</p>
+              <h2>Futurs projets de deuxième année</h2>
+              <p>Cette section sera complétée avec les projets réalisés en BUT2.</p>
+              <div class="tags"><span>BUT2</span><span>À compléter</span></div>
+            </div>
+          </article>
+          </div>
+        </details>
+
+        <details class="projects-dropdown">
+          <summary>
+            <span>BUT3</span>
+            <strong>Projets réalisés en BUT3</strong>
+          </summary>
+
+          <div class="project-grid">
+          <article class="project-card is-coming reveal">
+            <div class="project-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24"><rect x="3" y="3" width="18" height="18" rx="2"></rect><path d="M8 8h8"></path><path d="M8 12h8"></path><path d="M8 16h5"></path></svg>
+              <span class="status-pill">À venir</span>
+            </div>
+            <div class="project-content">
+              <p class="project-kicker">BUT3</p>
+              <h2>Futurs projets de troisième année</h2>
+              <p>Cette section sera complétée avec les projets réalisés en BUT3.</p>
+              <div class="tags"><span>BUT3</span><span>À compléter</span></div>
+            </div>
+          </article>
+          </div>
+        </details>
+
+        <details class="projects-dropdown" open>
+          <summary>
+            <span>Perso</span>
+            <strong>Projets personnels</strong>
+          </summary>
+
+          <div class="project-grid">
           <article class="project-card is-coming reveal">
             <div class="project-icon" aria-hidden="true">
               <svg viewBox="0 0 24 24"><rect x="2" y="3" width="20" height="14" rx="2"></rect><path d="M8 21h8"></path><path d="M12 17v4"></path><path d="M7 8h.01"></path><path d="M11 8h6"></path><path d="M7 12h.01"></path><path d="M11 12h6"></path></svg>
@@ -171,8 +214,10 @@
               <button class="text-link" type="button" data-modal-open="modal-homelab">Voir le projet</button>
             </div>
           </article>
-        </div>
+          </div>
+        </details>
       </section>
+
     </main>
 
     <div class="modal" id="modal-eve" role="dialog" aria-modal="true" aria-labelledby="modal-eve-title">
