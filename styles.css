@@ -1779,3 +1779,156 @@ body.light-mode .skill-card {
     padding: 0 16px 18px;
   }
 }
+
+/* Menus déroulants projets */
+
+.project-library {
+  display: grid;
+  gap: 38px;
+}
+
+.projects-main-dropdown,
+.projects-year-dropdown {
+  border: 0;
+  background: transparent;
+}
+
+.projects-main-summary,
+.projects-year-dropdown summary {
+  cursor: pointer;
+  list-style: none;
+  user-select: none;
+}
+
+.projects-main-summary::-webkit-details-marker,
+.projects-year-dropdown summary::-webkit-details-marker {
+  display: none;
+}
+
+/* Gros titres style Formation */
+
+.projects-main-summary {
+  display: grid;
+  grid-template-columns: auto auto 1fr auto;
+  gap: 14px;
+  align-items: center;
+  padding-bottom: 16px;
+  margin-bottom: 24px;
+  border-bottom: 1px solid var(--line);
+}
+
+.projects-main-summary span {
+  color: var(--accent);
+  font-size: 0.95rem;
+  font-weight: 900;
+}
+
+.projects-main-summary strong {
+  color: var(--text);
+  font-size: clamp(2.4rem, 6vw, 4.2rem);
+  font-weight: 950;
+  line-height: 1;
+  letter-spacing: -0.05em;
+}
+
+.projects-main-summary::after {
+  content: "+";
+  display: grid;
+  width: 36px;
+  height: 36px;
+  place-items: center;
+  border: 1px solid var(--line);
+  border-radius: 50%;
+  background: var(--surface-strong);
+  color: var(--accent-2);
+  font-size: 1.35rem;
+  font-weight: 900;
+}
+
+.projects-main-dropdown[open] > .projects-main-summary::after {
+  content: "−";
+}
+
+/* Sous-menu BUT1 */
+
+.projects-year-dropdown {
+  margin: 0 0 30px 42px;
+  padding: 20px;
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
+  background: color-mix(in srgb, var(--surface) 86%, transparent);
+  box-shadow: var(--shadow);
+}
+
+.projects-year-dropdown summary {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 20px;
+}
+
+.projects-year-dropdown summary span {
+  display: inline-flex;
+  align-items: center;
+  min-height: 30px;
+  padding: 0 12px;
+  border-radius: 999px;
+  background: var(--accent-soft);
+  color: var(--accent-2);
+  font-size: 0.78rem;
+  font-weight: 900;
+}
+
+.projects-year-dropdown summary strong {
+  color: var(--text);
+  font-size: 1.35rem;
+  font-weight: 900;
+}
+
+.projects-year-dropdown summary::after {
+  content: "+";
+  margin-left: auto;
+  display: grid;
+  width: 32px;
+  height: 32px;
+  place-items: center;
+  border: 1px solid var(--line);
+  border-radius: 50%;
+  background: var(--surface-strong);
+  color: var(--accent-2);
+  font-size: 1.2rem;
+  font-weight: 900;
+}
+
+.projects-year-dropdown[open] summary::after {
+  content: "−";
+}
+
+.projects-year-dropdown .project-grid {
+  margin-top: 0;
+}
+
+/* Projets personnels */
+
+.personal-project-grid {
+  margin-left: 42px;
+}
+
+@media (max-width: 760px) {
+  .projects-main-summary {
+    grid-template-columns: auto 1fr auto;
+  }
+
+  .projects-main-summary strong {
+    font-size: 2rem;
+  }
+
+  .projects-year-dropdown,
+  .personal-project-grid {
+    margin-left: 0;
+  }
+
+  .projects-year-dropdown {
+    padding: 16px;
+  }
+}
