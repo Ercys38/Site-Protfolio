@@ -1701,3 +1701,81 @@ body.light-mode .skill-card {
     max-height: 300px;
   }
 }
+
+/* Menus déroulants projets */
+
+.projects-dropdown {
+  margin-bottom: 26px;
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
+  background: color-mix(in srgb, var(--surface) 88%, transparent);
+  box-shadow: var(--shadow);
+  overflow: hidden;
+}
+
+.projects-dropdown summary {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+  padding: 22px 26px;
+  cursor: pointer;
+  list-style: none;
+  user-select: none;
+}
+
+.projects-dropdown summary::-webkit-details-marker {
+  display: none;
+}
+
+.projects-dropdown summary span {
+  display: inline-flex;
+  align-items: center;
+  min-height: 32px;
+  padding: 0 12px;
+  border-radius: 999px;
+  background: var(--accent-soft);
+  color: var(--accent-2);
+  font-size: 0.8rem;
+  font-weight: 900;
+  text-transform: uppercase;
+}
+
+.projects-dropdown summary strong {
+  flex: 1;
+  color: var(--text);
+  font-size: clamp(1.2rem, 3vw, 1.65rem);
+  font-weight: 900;
+}
+
+.projects-dropdown summary::after {
+  content: "+";
+  display: grid;
+  width: 34px;
+  height: 34px;
+  place-items: center;
+  border: 1px solid var(--line);
+  border-radius: 50%;
+  background: var(--surface-strong);
+  color: var(--accent-2);
+  font-size: 1.3rem;
+  font-weight: 900;
+}
+
+.projects-dropdown[open] summary::after {
+  content: "−";
+}
+
+.projects-dropdown .project-grid {
+  padding: 0 22px 24px;
+}
+
+@media (max-width: 700px) {
+  .projects-dropdown summary {
+    padding: 18px;
+  }
+
+  .projects-dropdown .project-grid {
+    padding: 0 16px 18px;
+  }
+}
